@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#about-section {
+    background-color: aliceblue;
+    height: 500px;
+}
+
+.about-heading h1 {
+    /* margin-top: 10px; */
+    text-align: center;
+}
+
+.about-info {
+    display: flex;
+}
+
+.about .about-image{
+    width: 40%;
+    height: 400px;
+}
+
+.about .about-image img {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.about .about-paragraph {
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 80%;
+    font-size: 19px;
+}
+
+/* collection */
+.collection-heading h1 {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.card {
+    box-shadow: 0px 0px 8px rgb(0, 0, 0, 0.5);
+    margin: 20px;
+    margin-top: 40px;
+}
+
+.card img:hover{
+    transform: scale(1.01);
+    opacity: 0.7;
+}
+
+.card-body > a > button{
+    background-color: #3366cc;
+    font-size: medium;
+    padding: 10px;
+    color: white;
+    border-color: #3366cc;
+}
+
+.card-body > a > button:hover{
+    background-color: white;
+    color: #000000;
+}
+
+
+
+/* blog */
+.blog-heading h1{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.detail{
+    margin-top: 30px;
+}
+
+.detail h3{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    color: #3366cc;
+}
+
+.detail h3, .detail p{
+    margin-left: 30px;
+}
+
+
+/* contact */
+input[type=text]:focus, input[type="email"]:focus{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #555;
+    outline: 0 none;
+}
+
+.form-floating .textarea:focus{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #555;
+    outline: 0 none;
+}
+
+
+
+/* FOOTER START*/
+.footer-footer {
+    padding-top: 0rem !important;
+}
+
+.footer .btn.btn-social {
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 2px;
+    transition: .3s;
+}
+
+.footer .btn.btn-social:hover {
+    color: black;
+    border-color: white;
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.footer .form-control {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.footer .copyright {
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .copyright a:hover {
+    color: #e7e7e7c0;
+}
+
+.footer .footer-menu a {
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(255, 255, 255, .1);
+}
+
+.footer .footer-menu a:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
+
+.col-md-6 {
+    font-size: 18px;
+}
+
+.col-md-6 {
+    flex: 1 0 auto !important;
+}
+
+/* FOOTER END */
+
+@media only screen and (max-width:1024px){
+    .about .about-paragraph{
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .about-image img{
+        width: 100%
+    }
+
+    .about .about-paragraph {
+        font-size: 14.6px;
+        /* width: 100%; */
+    }
+}
+
+
+@media only screen and (max-width:425px){
+    .about{
+        flex-wrap: wrap;
+    }
+
+    .about .about-paragraph{
+        font-size: 11px;
+    }
+
+    .about-image{
+        display: none;
+      }
+    
+}
+
+
+@media screen and (max-width:375px){
+    .about .about-paragraph{
+        font-size: 10px;
+        /* margin-top: 10px; */
+    }
+}
+
+
+@media only screen and (max-width:320px){
+  .about-image{
+    display: none;
+  }
+
+  .about-paragraph{
+    width: 100%;
+  }
+}
